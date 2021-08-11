@@ -1,0 +1,31 @@
+
+.nav {
+  background: none !important;
+  text-transform:uppercase;
+}
+.nav li {
+	margin-left: 3em;
+	margin-right: 3em;
+	display:inline;
+}
+
+.nav li a{
+	transition: .5s color ease-in-out;
+	text-decoration:none;
+	color: var(--font-color);
+}
+
+.divContainerForList {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.divContainerForList ul {
+	margin: 0 auto;
+}
+.buttonToggler{
+	background-color:black !important;
+}
+

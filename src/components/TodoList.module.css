@@ -1,0 +1,24 @@
+
+.todoContainer{
+	border-bottom: 1px solid black;
+}
+
+.todo{
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.loader-img{
+	max-width: 120px;
+	max-height: 120px;
+}
+.todo-done{
+	background-color: var(--done-todo);
+}
+
+.inputEdit:focus{
+	border-bottom: 1px solid var(--font-color) !important;
+	border-radius: 0 !important;
+	outline: none;
+}

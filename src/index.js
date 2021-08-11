@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {App} from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import store from './app/store';
+import {Provider} from 'react-redux';
+
+//for testing
+// import {fetchAllTodos} from './redux_components/todos/todosSlice';
+// store.dispatch(fetchAllTodos())
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
+
   document.getElementById('root')
 );
 
