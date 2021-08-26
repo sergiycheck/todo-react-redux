@@ -1,0 +1,19 @@
+
+.innerCont{
+	background-color: rgba(243, 243, 243, 0.428);
+	padding:10px;
+}
+
+@media screen and (min-width: 576px) {
+	.innerCont{
+		display: grid;
+		grid-gap: 24px;
+    grid-template-columns: auto auto auto auto auto auto ;
+	}
+	.bd-aside{
+		grid-area:1/4;
+	}
+	.bd-main{
+		grid-column:2/span 4;
+	}
+}

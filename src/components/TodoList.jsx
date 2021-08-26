@@ -45,13 +45,13 @@ export const TodoList = () => {
 
   return (
     <>
-      <div className="justify-content-center col-sm-7">
-        <div>
-          <h1>Todos {todoIds.length}</h1>
-        </div>
-        {LoadingData}
-        {todoElements}
+     
+      <div>
+        <h1>Todos {todoIds.length}</h1>
       </div>
+      {LoadingData}
+      {todoElements}
+
     </>
   );
 };

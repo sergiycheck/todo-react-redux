@@ -1,4 +1,7 @@
 
-.addNewTodoForm{
-	position:fixed;
+@media screen and (min-width:576px ){
+	.addNewTodoForm{
+		position:fixed;
+	}
+	
 }

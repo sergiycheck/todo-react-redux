@@ -14,4 +14,6 @@ code {
   --main-bg-color: #f1f1f1;
   --done-todo: #d1e7dd;
   --font-color: #444444;
+
+  --min-width-content: 700px;
 }

@@ -11,8 +11,8 @@ export const MyTextInput = ({ label, ...props }) => {
 		'invalid-feedback',
 		addFormStyles['d-block']
 	)
-	console.log('field meta \n', field, '\n', meta);
-	console.log('props', props);
+	// console.log('field meta \n', field, '\n', meta);
+	// console.log('props', props);
   return (
     <>
       <input {...field} {...props} />

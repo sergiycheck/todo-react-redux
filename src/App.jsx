@@ -13,7 +13,16 @@ import { TodoList } from "./components/TodoList.jsx";
 
 import { AddTodoForm } from "./components/AddTodoForm";
 
+import AppStyles from "./App.module.css";
+import classnames from "classnames";
+
 export const App = () => {
+  
+  // "row g-2",
+  const appInnerContainer = classnames( AppStyles.innerCont);
+  const addFormClasses = classnames(AppStyles['bd-aside'],'col-sm-5');
+  const mainContent = classnames(AppStyles['bd-main'],'justify-content-center col-sm-7');
+
   return (
     <div className="wrapper">
       <Router>
@@ -27,13 +36,15 @@ export const App = () => {
                 <React.Fragment>
                   <div className="container-fluid">
                     <div className="d-flex justify-content-center">
-                      <div className="container">
-                        <div className="row g-2">
+                      <div className="container-lg">
+                        <div className={appInnerContainer}>
 
-                          <TodoList></TodoList>
-
-                          <div className="col-sm-3">
+                          <div className={addFormClasses}>
                             <AddTodoForm></AddTodoForm>
+                          </div>
+
+                          <div className={mainContent}>
+                            <TodoList></TodoList>
                           </div>
 
                         </div>
